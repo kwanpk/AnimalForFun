@@ -35,15 +35,16 @@
         android:id="@+id/imbVolumn"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:scaleType="fitCenter"
-        app:srcCompat="@drawable/volume"
-        app:layout_constraintLeft_toRightOf="@+id/imvQuestion"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toBottomOf="@+id/imvQuestion"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
+        android:onClick="playSound"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/imvQuestion"
+        app:layout_constraintLeft_toRightOf="@+id/imvQuestion"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.48"
+        app:srcCompat="@drawable/volume" />
 
     <Button
         android:id="@+id/btn1"
@@ -90,14 +91,13 @@
         android:id="@+id/btn4"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="0dp"
         android:layout_marginTop="8dp"
         android:onClick="choiceAns"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_chainStyle="spread"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/btn3"
         app:layout_constraintTop_toBottomOf="@+id/imvQuestion"
-        app:layout_constraintVertical_bias="0.5" />
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.505" />
 </android.support.constraint.ConstraintLayout>
